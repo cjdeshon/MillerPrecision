@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Miller Precision</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Miller Precision</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>This is where the company info will go.</p>
+    </section>
+
+    <section id="reviews">
+      <h2>Our Work</h2>
+      <div class="review">
+        <p>"Great experience working with them!" – Jane D.</p>
+        <img src="images/sample1.jpg" alt="Job Photo 1" />
+      </div>
+      <div class="review">
+        <p>"Professional and efficient." – Mike R.</p>
+        <img src="images/sample2.jpg" alt="Job Photo 2" />
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Client Company</p>
+  </footer>
+
+  <script>
+    // Smooth scroll effect
+    $('nav a').click(function (e) {
+      e.preventDefault();
+      const target = $(this).attr('href');
+      $('html, body').animate({
+        scrollTop: $(target).offset().top
+      }, 600);
+    });
+
+    // Placeholder form handler
+    $('#contact-form').submit(function (e) {
+      e.preventDefault();
+      alert("Message submitted! (form backend not connected)");
+    });
+  </script>
+</body>
+</html>
