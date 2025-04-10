@@ -1,0 +1,55 @@
+Bradley Miller Precision Website
+
+Building
+	Legallity
+		- If any personal data is collected, the website must have a privacy policy.
+
+	Cost to build
+		- Leave it basic
+			- add a few more pictures and basic company info
+			- $500	
+		- Fancify and custom domain
+			- $800
+		- add SEO 
+			- +$300
+	
+	Custom Domain (url name)
+		- Pay to get the site hosted (Go Daddy, Google Domain, ect)
+		- Professional url
+
+
+	Search Engine Optimization
+		- Website would appear based on common search words including in the website/metadata (tags in html)
+			- local regions/cities, type of work, ect
+
+	Cost to build
+		- Leave it basic
+			- add a few more pictures and basic company info
+			- leave domain name through GitHub Pages
+			- $500
+		- Fancify and custom domain
+			- $800
+		- add SEO 
+			- +$300
+		- maintenance
+			- 20 per month
+			- can decide this once final product released
+
+
+
+
+
+Website meeting 4/11
+
+	Talking points
+		-cost 300:100
+		-SEO
+		-privacy policy for personal data
+		-Release Date
+		-colors
+		-contact info in the bottom
+	
+
+
+
+

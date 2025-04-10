@@ -9,19 +9,37 @@ body {
   header {
     background: #222;
     color: #fff;
-    padding: 20px;
+    padding: 10px 20px;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3)
   }
   
   nav {
     margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
   }
   
   nav a {
     color: #fff;
-    margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
+    padding: 8px 12px;
+    transition: background 0.3s;
+  }
+
+  nav a:hover {
+    background: #444;
+    border-radius: 5px;
+  }
+
+  section {
+    scroll-margin-top: 100px; /* adjust this based on your exact header height */
   }
   
   main {

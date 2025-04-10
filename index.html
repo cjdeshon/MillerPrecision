@@ -11,13 +11,30 @@
   <header>
     <h1>Miller Precision</h1>
     <nav>
-      <a href="#about">About</a>
-      <a href="#reviews">Reviews</a>
+      <a href="#">Home</a>
+      <a href="#home">Residential</a>
+      <a href="#residential">Commercial</a>
+      <a href="#commercial">Reviews</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main>
+    <section id="home">
+      <h2>Welcome to Miller Precision</h2>
+      <p>Your trusted partner in residential and commercial cleaning.</p>
+    </section>
+  
+    <section id="residential">
+      <h2>Residential Services</h2>
+      <p>Details about residential services...</p>
+    </section>
+  
+    <section id="commercial">
+      <h2>Commercial Services</h2>
+      <p>Details about commercial services...</p>
+    </section>
+    
     <section id="about">
       <h2>About Us</h2>
       <p>This is where the company info will go.</p>
@@ -51,16 +68,19 @@
   </footer>
 
   <script>
-    // Smooth scroll effect
     $('nav a').click(function (e) {
       e.preventDefault();
       const target = $(this).attr('href');
-      $('html, body').animate({
-        scrollTop: $(target).offset().top
-      }, 600);
+  
+      if (target === '#') {
+        $('html, body').animate({ scrollTop: 0 }, 600);
+      } else {
+        $('html, body').animate({
+          scrollTop: $(target).offset().top
+        }, 600);
+      }
     });
-
-    // Placeholder form handler
+  
     $('#contact-form').submit(function (e) {
       e.preventDefault();
       alert("Message submitted! (form backend not connected)");
