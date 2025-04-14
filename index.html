@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Miller Precision</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 <body>
@@ -69,6 +70,19 @@
           scrollTop: $(target).offset().top
         }, 600);
       }
+    });
+
+    $(window).on('scroll', function () {
+      $('section').each(function () {
+        const top_of_element = $(this).offset().top;
+        const bottom_of_element = $(this).offset().top + $(this).outerHeight();
+        const bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+        const top_of_screen = $(window).scrollTop();
+
+        if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)) {
+          $(this).addClass('visible');
+        }
+      });
     });
   </script>
 </body>
