@@ -167,5 +167,11 @@ body {
     nav {
       flex-wrap: wrap;
     }
+  
+    /* ✅ HIDE left/right sections on small screens */
+    .header-left,
+    .header-right {
+      display: none;
+    }
   }
   
