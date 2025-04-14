@@ -54,12 +54,8 @@
 
     <section id="contact">
       <h2>Contact Us</h2>
-      <form id="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send</button>
-      </form>
+      <p>Email: <a href="mailto:bradmiller1939@gmail.com">bradmiller1939@gmail.com</a></p>
+      <p>Phone: <a href="tel:+3093260286">(309) 326-0286</a></p>
     </section>
   </main>
 
@@ -79,11 +75,6 @@
           scrollTop: $(target).offset().top
         }, 600);
       }
-    });
-  
-    $('#contact-form').submit(function (e) {
-      e.preventDefault();
-      alert("Message submitted! (form backend not connected)");
     });
   </script>
 </body>

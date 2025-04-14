@@ -42,14 +42,36 @@ Building
 Website meeting 4/11
 
 	Talking points
-		-cost 300:100
+		-cost 300:150
 		-SEO
 		-privacy policy for personal data
 		-Release Date
 		-colors
+			-Grey and Purple
 		-contact info in the bottom
 	
+	Home section
+		-mission statement
+		-basic 1-2 lines about service offered
+		-areas willing to service
+	Residential Services
+	Commercial Services
+	About Us
+		-pictures
+		-company story
+		-
 
 
+Email Bradley
+	site content
+		-Home: Misson statement, Service Areas
+		-Commercial: Explain Services one picture
+		-About Us: Pictures of you and tony, company story
+		-Reviews: client reviews
+		-Contact info
+		-common words used for this business (metadata info)
+
+	
+			
 
 
