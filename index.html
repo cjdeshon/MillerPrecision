@@ -140,6 +140,19 @@
         }
       });
     });
+
+    $(document).ready(function () {
+      $('section').each(function () {
+        const top_of_element = $(this).offset().top;
+        const bottom_of_element = top_of_element + $(this).outerHeight();
+        const bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+        const top_of_screen = $(window).scrollTop();
+
+        if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)) {
+          $(this).addClass('visible');
+        }
+      });
+    });
   </script>
 </body>
 </html>
