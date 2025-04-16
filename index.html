@@ -19,8 +19,8 @@
       <h1>Miller Precision</h1>
       <nav>
         <a href="#">Home</a>
-        <a href="#home">Commercial</a>
-        <a href="#commercial">Reviews</a>
+        <a href="#commercial">Commercial</a>
+        <a href="#about">Reviews</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -33,18 +33,62 @@
 
   <main>
     <section id="home">
-      <h2>Welcome to Miller Precision</h2>
-      <p>Your trusted partner in residential and commercial cleaning.</p>
+      <div class="section-flex">
+        <div class="text-content">
+          <h2>Welcome to Miller Precision</h2>
+          <p>Our mission is to keep Peoria’s fleets clean and professional with reliable, high-quality semi truck and trailer washing services tailored to meet each client’s needs.</p>
+        </div>
+        <div class="image-content">
+          <img src="Images/ThriftFleet.jpeg" alt="Fleet Washing Example" />
+        </div>
+      </div>
     </section>
   
     <section id="commercial">
-      <h2>Commercial Services</h2>
-      <p>Details about commercial services...</p>
+      <h2 class="centered-heading">Commercial Services: We come to you!</h2>
+
+      <div class="zigzag-row reverse">
+        <div class="zigzag-image">
+          <img src="images/DetailWash1.jpeg" alt="Fleet Wash Example" />
+        </div>
+        <div class="zigzag-text">
+          <h3>Base Fleet Wash</h3>
+          <p>A thorough exterior wash that covers the cab, frame, wheels, and rims — ensuring your fleet looks clean, uniform, and road-ready.</p>
+          <ul class="service-list">
+            <li>✅ Full cab, frame, and wheel wash</li>
+            <li>✅ Rim detailing</li>
+            <li>✅ Consistent finish across your fleet</li>
+          </ul>
+        </div>
+      </div>
+    
+      <div class="zigzag-row reverse">
+        <div class="zigzag-text">
+          <h3>Exterior Detail</h3>
+          <p>Our premium detailing service includes hand-cleaning of windows and roof, along with meticulous engine and under-hood cleaning for a polished, professional finish.</p>
+          <ul class="service-list">
+            <li>✅ Hand-cleaned windows and roof</li>
+            <li>✅ Engine and under-hood detailing</li>
+            <li>✅ Polished finish with attention to detail</li>
+          </ul>
+        </div>
+        <div class="zigzag-image">
+          <img src="images/DetailWash1.jpeg" alt="Detail Wash Example" />
+        </div>
+      </div>    
     </section>
     
     <section id="about">
-      <h2>About Us</h2>
-      <p>This is where the company info will go.</p>
+      <div class="section-flex">
+        <div class="text-content">
+          <h2 class="centered-heading">About Us</h2>
+          <p>Miller Precision was founded in Fall 2024 by Bradley Miller, who identified a growing demand for high-quality fleet and trailer cleaning services while working in the construction industry. Recognizing both the need and his passion for the work, he launched the company with a commitment to professionalism and reliability. In Spring 2025, Antonio Gatewood joined as a partner to support the company’s rapid growth and ensure every client receives the highest level of service. 
+          </p>
+        </div>
+        <div class="image-content">
+          <img src="images/DetailWash2.jpeg" alt="Founders at work" />
+        </div>
+      </div>
     </section>
 
     <section id="reviews">
@@ -74,16 +118,16 @@
     $('nav a').click(function (e) {
       e.preventDefault();
       const target = $(this).attr('href');
-  
+
       if (target === '#') {
         $('html, body').animate({ scrollTop: 0 }, 600);
       } else {
+        const offsetTop = $(target).offset().top - 140; // Adjust for header height
         $('html, body').animate({
-          scrollTop: $(target).offset().top
+          scrollTop: offsetTop
         }, 600);
       }
     });
-
     $(window).on('scroll', function () {
       $('section').each(function () {
         const top_of_element = $(this).offset().top;

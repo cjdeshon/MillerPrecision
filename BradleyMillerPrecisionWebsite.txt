@@ -71,6 +71,10 @@ Email Bradley
 		-Contact info
 		-common words used for this business (metadata info)
 
+
+Next Bradley Meeting:
+	-pricing
+
 	
 			
 

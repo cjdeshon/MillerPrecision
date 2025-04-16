@@ -87,16 +87,13 @@ body {
     border-radius: 5px;
     color: white;
   }
-
-  section {
-    scroll-margin-top: 100px; /* adjust this based on your exact header height */
-  }
   
   main {
     padding: 20px;
   }
   
   section {
+    scroll-margin-top: 140px; /* adjust this based on your exact header height */
     margin-bottom: 40px;
     background: white;
     padding: 30px;
@@ -110,6 +107,87 @@ body {
   section.visible {
     opacity: 1;
     transform: translateY(0);
+  }
+
+  .section-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .section-flex .text-content {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .section-flex .image-content {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+  }
+  
+  .section-flex .image-content img {
+    max-height: 250px; /* ✅ sets image height relative to text */
+    width: auto;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .centered-heading {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .zigzag-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .zigzag-row.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .zigzag-image {
+    flex: 1.2;
+    min-width: 250px;
+    display: flex;
+    justify-content: center;   /* ✅ centers the image horizontally */
+    align-items: center;       /* vertically centers within the row */
+    padding: 0 10px;            /* optional: adds even spacing inside the container */
+    box-sizing: border-box;
+  }
+  
+  .zigzag-text h3 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .zigzag-text {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .zigzag-image img {
+    max-width: 100%;
+    max-height: 250px;  /* Match home section */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    object-fit: contain;
+  }
+  
+  .zigzag-text h3 {
+    margin-bottom: 10px;
   }
   
   .review img {
@@ -151,6 +229,19 @@ body {
     color: #fff;
   }
 
+  .service-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+    line-height: 1.8;
+    font-size: 1rem;
+  }
+  
+  .service-list li {
+    margin-bottom: 8px;
+    font-weight: 400;
+  }
+
   @media (max-width: 768px) {
     header {
       flex-direction: column;
@@ -172,6 +263,32 @@ body {
     .header-left,
     .header-right {
       display: none;
+    }
+
+    .section-flex {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .section-flex .image-content {
+      text-align: center;
+    }
+
+    .section-flex .image-content img {
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: contain;
+    }
+
+    .zigzag-row,
+    .zigzag-row.reverse {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .zigzag-image,
+    .zigzag-text {
+      width: 100%;
     }
   }
   
