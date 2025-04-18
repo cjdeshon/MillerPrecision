@@ -74,12 +74,11 @@ Email Bradley
 
 Next Bradley Meeting:
 	-pricing
-	-future plans for about us section
-	-
+	-Professional Email
 
 Next Site Update
 	-domain name
-	-website content appearing as soon as pulled up
+	-fix highlighted section when scrolling
 
 Later Work
 	-transitions

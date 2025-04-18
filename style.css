@@ -139,6 +139,23 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
 
+  .double-image {
+    display: flex;
+    gap: 10px; /* spacing between the two images */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  
+  .double-image img {
+    max-width: 48%; /* keeps both images inside the available space */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+
+
   .centered-heading {
     text-align: center;
     margin-bottom: 30px;
