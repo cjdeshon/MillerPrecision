@@ -307,5 +307,9 @@ body {
     .zigzag-text {
       width: 100%;
     }
+
+    .double-image img {
+      max-width: 48%;
+    }
   }
   
