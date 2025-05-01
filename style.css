@@ -28,6 +28,19 @@ body {
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   }
+
+  .header-center h1 {
+    margin-bottom: 4px; /* adjust this number as needed */
+    font-size: 28px;     /* optional: adjust for balance */
+  }
+  
+  .header-center h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;     /* optional: smaller subtitle */
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
   
   .header-left,
   .header-right {
