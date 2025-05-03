@@ -1,7 +1,8 @@
 Owner: Bradley Miller
 Company name: Miller Precision
+Hosting: Namecheap
+
 
 
 Next Meeting:
 -  Service Locations for google business profile
--  hours of operation
