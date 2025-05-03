@@ -22,7 +22,8 @@
       <nav>
         <a href="#">Home</a>
         <a href="#commercial">Commercial</a>
-        <a href="#about">Reviews</a>
+        <a href="#about">About</a>
+        <a href="#reviews">Our Work</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -38,17 +39,15 @@
       <div class="section-flex">
         <div class="text-content">
           <h2>Welcome to Miller Precision</h2>
-          <p>Our mission is to keep Peoria’s fleets clean and professional with reliable, high-quality semi truck and trailer washing services tailored to meet each client’s needs.</p>
+          <h4 class="tagline">Mobile Power Washing for Semis, Trailers & Fleets in Central Illinois</h4>
+          <p>Our mission is to keep fleets across Central Illinois clean and professional with reliable, high-quality semi truck and trailer washing services tailored to meet each client’s needs.</p>
         </div>
         <div class="image-content">
-          <div class="double-image">
-            <img src="Images/ThriftFleet.jpeg" alt="Fleet Washing Example" />
-            <img src="Images/Peoria.jpg" alt="Map of Peoria" class="hide-on-mobile"/>
-          </div>
+          <img src="Images/logo1.png" alt="MP Fleet Washing Logo" style="max-width: 90%; height: auto; border-radius: 12px;" />
         </div>
       </div>
     </section>
-  
+
     <section id="commercial">
       <h2 class="centered-heading">Commercial Services: We come to you!</h2>
 
@@ -66,7 +65,7 @@
           </ul>
         </div>
       </div>
-    
+
       <div class="zigzag-row reverse">
         <div class="zigzag-text">
           <h3>Exterior Detail</h3>
@@ -82,13 +81,12 @@
         </div>
       </div>    
     </section>
-    
+
     <section id="about">
       <div class="section-flex">
         <div class="text-content">
           <h2 class="centered-heading">About Us</h2>
-          <p>Miller Precision was founded in Fall 2024 by Bradley Miller, who identified a growing demand for high-quality fleet and trailer cleaning services while working in the construction industry. Recognizing both the need and his passion for the work, he launched the company with a commitment to professionalism and reliability. In Spring 2025, Antonio Gatewood joined as a partner to support the company’s rapid growth and ensure every client receives the highest level of service. 
-          </p>
+          <p>Miller Precision was founded in Fall 2024 by Bradley Miller, who identified a growing demand for high-quality fleet and trailer cleaning services while working in the construction industry. Recognizing both the need and his passion for the work, he launched the company with a commitment to professionalism and reliability. In Spring 2025, Antonio Gatewood joined as a partner to support the company’s rapid growth and ensure every client receives the highest level of service. </p>
         </div>
         <div class="image-content">
           <img src="Images/owner1.jpg" alt="Founders at work" />
@@ -97,16 +95,30 @@
     </section>
 
     <section id="reviews">
-      <h2>Our Work</h2>
-      <div class="review">
-        <p>"Great experience working with them!" – Jane D.</p>
-        <img src="images/sample1.jpg" alt="Job Photo 1" />
+      <h2 class="centered-heading">Our Work</h2>
+    
+      <div class="review-flex">
+        <div class="review-text">
+          <p>""Miller Precision has exceeded our expectations. Their team is reliable, efficient, and consistently delivers top-quality results. Our trucks have never looked better — it’s a service we count on."</p>
+          <p><strong>– Thrift Company Fleet Manager</strong></p>
+        </div>
+        <div class="review-image">
+          <img src="Images/ThriftFleet.jpeg" alt="Thrift Company Fleet Wash" />
+        </div>
       </div>
-      <div class="review">
-        <p>"Professional and efficient." – Mike R.</p>
-        <img src="images/sample2.jpg" alt="Job Photo 2" />
+    
+      <div class="review-flex-column">
+        <div class="review-text">
+          <p>"We had a few trucks that hadn’t been detailed in years — Miller Precision made them look brand new. The difference was night and day. Highly recommend for any fleet in Central Illinois!"</p>
+          <p><strong>– Logistics Supervisor, Midstate Freight</strong></p>
+        </div>
+        <div class="review-before-after">
+          <img src="Images/before.jpg" alt="Before Cleaning" />
+          <img src="Images/after.jpg" alt="After Cleaning" />
+        </div>
       </div>
     </section>
+    
 
     <section id="contact">
       <h2>Contact Us</h2>
@@ -116,6 +128,7 @@
   </main>
 
   <footer>
+    <p>Serving Peoria and surrounding areas | Licensed & Insured</p>
     <p>&copy; 2025 Miller Precision</p>
   </footer>
 
@@ -127,12 +140,13 @@
       if (target === '#') {
         $('html, body').animate({ scrollTop: 0 }, 600);
       } else {
-        const offsetTop = $(target).offset().top - 140; // Adjust for header height
+        const offsetTop = $(target).offset().top - 140;
         $('html, body').animate({
           scrollTop: offsetTop
         }, 600);
       }
     });
+
     $(window).on('scroll', function () {
       $('section').each(function () {
         const top_of_element = $(this).offset().top;
