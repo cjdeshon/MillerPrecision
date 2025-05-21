@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=1080, user-scalable=no">
   
     <!-- SEO Essentials -->
     <title>Miller Precision Fleet Washing | Mobile Truck & Trailer Cleaning in Illinois</title>
@@ -28,6 +28,8 @@
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
     <script type="application/ld+json">
       {
@@ -67,13 +69,6 @@
     <div class="header-center">
       <h1>Miller Precision</h1>
       <h3>Fleet Washing</h3>
-      <nav>
-        <a href="#">Home</a>
-        <a href="#commercial">Commercial</a>
-        <a href="#about">About</a>
-        <a href="#reviews">Our Work</a>
-        <a href="#contact">Contact</a>
-      </nav>
     </div>
   
     <div class="header-right">
@@ -82,52 +77,88 @@
     </div>
   </header>
 
+  <div class="sticky-nav">
+    <nav>
+      <a href="#">Home</a>
+      <a href="#commercial">Commercial</a>
+      <a href="#about">About</a>
+      <a href="#reviews">Our Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+
   <main>
+
     <section id="home">
       <div class="section-flex">
         <div class="text-content">
-          <h2>Welcome to Miller Precision</h2>
-          <h4 class="tagline">Mobile Power Washing for Semis, Trailers & Fleets in Central Illinois</h4>
-          <p>Our mission is to keep fleets across Central Illinois clean and professional with reliable, high-quality semi truck and trailer washing services tailored to meet each client’s needs.</p>
+          <h2 class="centered-heading" style="font-size: 36px; color: var(--primary); margin-bottom: 10px;">
+            Clean. Professional. Reliable.
+          </h2>
+          <h4 class="tagline" style="font-size: 20px; color: var(--secondary); margin-bottom: 20px;">
+            Mobile Fleet Washing Across Central Illinois
+          </h4>
+          <p style="font-size: 18px; color: var(--text); max-width: 600px;">
+            At <strong>Miller Precision</strong>, we specialize in high-quality mobile washing for semi-trucks, trailers, and commercial fleets. Trusted by logistics teams and fleet managers alike, we bring the shine to you—on time, every time.
+          </p>
+          <a href="#contact" class="quote-btn" style="margin-top: 20px;">Request a Free Quote</a>
         </div>
         <div class="image-content">
-          <img src="Images/logo1.png" alt="Miller Precision Fleet Washing logo for commercial truck and trailer cleaning in Illinois" style="max-width: 90%; height: auto; border-radius: 12px;" />
+          <lottie-player
+            src="images/truck-animation.json"
+            background="transparent"
+            speed="1"
+            style="width: 100%; max-width: 400px; height: auto;"
+            loop
+            autoplay>
+          </lottie-player>
         </div>
       </div>
     </section>
 
     <section id="commercial">
-      <h2 class="centered-heading">Commercial Services: We come to you!</h2>
+      <h2 class="centered-heading">Commercial Services</h2>
 
-      <div class="zigzag-row reverse">
-        <div class="zigzag-image">
-          <img src="Images/GroupWash1.jpg" alt="Fleet of semi-trucks receiving mobile power wash service in Peoria, Illinois" />
+      <div class="carousel">
+        <div class="carousel-track">
+
+          <!-- Slide 1 -->
+          <div class="carousel-slide">
+            <h3>We Come to You!</h3>
+            <p>Whether you're parked at a depot or job site, our mobile units bring the cleaning power directly to your fleet — no extra effort on your part.</p>
+            <img src="Images/logo1.png" alt="Mobile fleet wash truck arriving on site" />
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-slide">
+            <h3>Base Fleet Wash – $35</h3>
+            <p>A thorough exterior wash for cab, frame, wheels, and rims — keeping your trucks road-ready and professional.</p>
+            <ul class="service-list">
+              <li>✅ Full cab, frame, and wheel wash</li>
+              <li>✅ Rim detailing</li>
+              <li>✅ Consistent finish across your fleet</li>
+            </ul>
+            <img src="Images/GroupWash1.jpg" alt="Fleet receiving wash" />
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-slide">
+            <h3>Exterior Detail – $100</h3>
+            <p>Includes hand-cleaned windows, roof, and detailed engine bay. Ideal for standout presentation and deep-clean polish.</p>
+            <ul class="service-list">
+              <li>✅ Hand-cleaned windows and roof</li>
+              <li>✅ Engine and under-hood detailing</li>
+              <li>✅ Polished finish with attention to detail</li>
+            </ul>
+            <img src="Images/exterior1.jpeg" alt="Detailed wash example" />
+          </div>
+
         </div>
-        <div class="zigzag-text">
-          <h3>Base Fleet Wash - $35</h3>
-          <p>A thorough exterior wash that covers the cab, frame, wheels, and rims — ensuring your fleet looks clean, uniform, and road-ready.</p>
-          <ul class="service-list">
-            <li>✅ Full cab, frame, and wheel wash</li>
-            <li>✅ Rim detailing</li>
-            <li>✅ Consistent finish across your fleet</li>
-          </ul>
-        </div>
+
+        <!-- Navigation Buttons -->
+        <button class="carousel-btn prev">&#10094;</button>
+        <button class="carousel-btn next">&#10095;</button>
       </div>
-
-      <div class="zigzag-row reverse">
-        <div class="zigzag-text">
-          <h3>Exterior Detail - $100</h3>
-          <p>Our premium detailing service includes hand-cleaning of windows and roof, along with meticulous engine and under-hood cleaning for a polished, professional finish.</p>
-          <ul class="service-list">
-            <li>✅ Hand-cleaned windows and roof</li>
-            <li>✅ Engine and under-hood detailing</li>
-            <li>✅ Polished finish with attention to detail</li>
-          </ul>
-        </div>
-        <div class="zigzag-image">
-          <img src="Images/DetailWash1.jpeg" alt="Close-up of semi-truck detail washing including wheels and engine bay" />
-        </div>
-      </div>    
     </section>
 
     <section id="about">
@@ -169,9 +200,21 @@
     
 
     <section id="contact">
-      <h2>Contact Us</h2>
-      <p>Email: <a href="mailto:bradmiller1939@gmail.com">bradmiller1939@gmail.com</a></p>
-      <p>Phone: <a href="tel:+3093260286">(309) 326-0286</a></p>
+      <div class="section-flex">
+        <div class="text-content">
+          <h2 class="centered-heading">Contact Us</h2>
+          <p style="font-size: 16px; max-width: 500px; margin: 0 auto 20px;">
+            Need a quote or have questions? We’d love to hear from you. Reach out using the details below or send a message directly.
+          </p>
+          <div class="contact-details" style="margin-top: 20px;">
+            <p><strong>Email:</strong> <a href="mailto:bradmiller1939@gmail.com">bradmiller1939@gmail.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+13093260286">(309) 326-0286</a></p>
+          </div>
+        </div>
+        <div class="image-content">
+          <img src="Images/logo1.png" alt="Miller Precision Logo" style="max-height: 180px; border-radius: 12px;" />
+        </div>
+      </div>
     </section>
   </main>
 
@@ -187,6 +230,8 @@
       </div>
     </div>
   </footer>
+
+  <a href="#contact" class="floating-cta">Let’s Talk</a>
 
   <script>
     $('nav a').click(function (e) {
@@ -228,6 +273,31 @@
         }
       });
     });
+
+    //Commercial slideshow
+      document.addEventListener('DOMContentLoaded', () => {
+      const track = document.querySelector('.carousel-track');
+      const slides = document.querySelectorAll('.carousel-slide');
+      const prevBtn = document.querySelector('.carousel-btn.prev');
+      const nextBtn = document.querySelector('.carousel-btn.next');
+      let currentSlide = 0;
+
+      function updateSlidePosition() {
+        track.style.transform = `translateX(-${currentSlide * 100}%)`;
+      }
+
+      nextBtn.addEventListener('click', () => {
+        currentSlide = (currentSlide + 1) % slides.length;
+        updateSlidePosition();
+      });
+
+      prevBtn.addEventListener('click', () => {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        updateSlidePosition();
+      });
+    });
+
+
   </script>
 </body>
 </html>
